@@ -1,3 +1,4 @@
+@@ -0,0 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
-          function initFreshChat() {
+        function initFreshChat() {
             window.fcWidget.init({
-              token: "8cc93b5e-f147-4b14-99ab-6d1ad138156e",
-              host: "https://wchat.in.freshchat.com"
+                token: "8cc93b5e-f147-4b14-99ab-6d1ad138156e",
+                host: "https://wchat.in.freshchat.com"
             });
-          }
-          function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+            window.fcWidget.open();
+        }
+        function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
         initialize(document.body);
-    </script>
 
+
+    </script>
 </head>
 <body>
     
